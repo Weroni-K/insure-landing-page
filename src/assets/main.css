@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  font-weight: normal;
+  font-family: var(--font-body);
+  font-size: 16px;
+}
+
+img,
+svg {
+  display: block;
+  max-inline-size: 100%;
+}
+
+button {
+  font: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  color: currentColor;
+}
+
+p,
+h1,
+h2,
+h3 {
+  overflow-wrap: break-word;
+}
+
+ul,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+/* reset end */
+
+:root {
+  --color-primary-dark-violet: hsl(256, 26%, 20%);
+  --color-primary-greyish-blue: hsl(216, 30%, 68%);
+  --color-neutral-very-dark-violet: hsl(270, 9%, 17%);
+  --color-neutral-dark-greyish-violet: hsl(273, 4%, 51%);
+  --color-neutral-light-grey: hsl(0, 0%, 98%);
+  --font-body: 'Karla', serif;
+  --font-headings: 'DM Serif Display', serif;
+  --font-weight-400: 400;
+  --font-weight-700: 700;
+}
+
+h1 {
+  font-family: var(--font-headings);
+  font-weight: var(--font-weight-400);
+  font-size: 72px;
+}
+
+h2 {
+  font-family: var(--font-headings);
+  font-weight: var(--font-weight-400);
+  font-size: 28px;
+}
+
+/* #app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+} */
+
+/* designs:
+- Mobile: 375px
+- Desktop: 1440px
+320px to large screens. 
+*/
