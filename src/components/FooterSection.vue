@@ -128,9 +128,10 @@ p {
   font-weight: var(--font-weight-700);
   font-size: 14px;
   padding-bottom: 0.5rem;
+  line-height: 1.6;
 }
 
-a:hover {
+p:hover {
   text-decoration: underline;
 }
 
@@ -145,6 +146,9 @@ a:hover {
     color: var(--color-neutral-dark-greyish-violet);
     background: var(--color-neutral-light-grey) url(../assets/images/bg-pattern-footer-mobile.svg)
       no-repeat top / contain;
+  }
+  .footer-content {
+    padding-bottom: 0;
   }
   .upper-part {
     margin-top: 2rem;

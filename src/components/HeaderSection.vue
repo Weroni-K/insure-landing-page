@@ -41,11 +41,10 @@ const windowWidth = ref(window.innerWidth)
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
-  // Disable/enable scrolling on the body
   if (isMenuOpen.value) {
-    document.body.style.overflow = 'hidden' // Disable scroll
+    document.body.style.overflow = 'hidden'
   } else {
-    document.body.style.overflow = '' // Re-enable scroll
+    document.body.style.overflow = ''
   }
 }
 
@@ -73,11 +72,11 @@ onUnmounted(() => {
 }
 
 .navbar {
+  height: 3rem;
+  padding: 1rem 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 24px;
-  height: 3rem;
 }
 
 .no-scroll {
@@ -85,45 +84,44 @@ onUnmounted(() => {
 }
 
 .nav-links {
-  display: flex;
-  list-style-type: none;
-  gap: 2rem;
   margin: 0;
   padding: 0;
-  text-transform: uppercase;
+  display: flex;
   align-items: center;
+  gap: 2rem;
   color: var(--color-neutral-dark-greyish-violet);
   font-weight: var(--font-weight-700);
+  list-style-type: none;
+  text-transform: uppercase;
   a:hover {
     color: var(--color-neutral-very-dark-violet);
   }
 }
 
 .view-plans-button {
-  text-transform: uppercase;
+  padding: 10px 2rem;
+  color: var(--color-neutral-very-dark-violet);
   border: 2px solid var(--color-neutral-very-dark-violet);
   background: transparent;
-  color: var(--color-neutral-very-dark-violet);
   font-weight: var(--font-weight-700);
-  padding: 10px 2rem;
+  text-transform: uppercase;
 }
 
 .view-plans-button:hover {
   cursor: pointer;
-  background-color: var(--color-neutral-very-dark-violet);
   color: var(--color-neutral-light-grey);
+  background-color: var(--color-neutral-very-dark-violet);
 }
 
 .burger {
-  display: none;
-  background: transparent;
-  border: 2px solid var(--color-neutral-very-dark-violet);
-  cursor: pointer;
-  flex-direction: column;
   padding: 8px 4px;
   width: 32px;
   height: 32px;
-
+  display: none;
+  flex-direction: column;
+  border: 2px solid var(--color-neutral-very-dark-violet);
+  background: transparent;
+  cursor: pointer;
   span {
     width: 18px;
     height: 2px;
@@ -159,15 +157,15 @@ onUnmounted(() => {
   }
 
   .nav-links {
-    display: none;
-    height: calc(100vh - 5rem);
-    width: 100%;
     margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
     left: 0;
     top: 5rem;
+    color: var(--color-neutral-light-grey);
     background: var(--color-neutral-very-dark-violet)
       url(../assets/images/bg-pattern-mobile-nav.svg) no-repeat bottom / contain;
-    color: var(--color-neutral-light-grey);
     font-size: 20px;
     font-weight: var(--font-weight-400);
     a:hover {
@@ -184,15 +182,15 @@ onUnmounted(() => {
   }
 
   .view-plans-button {
-    border: 2px solid var(--color-neutral-light-grey);
-    color: var(--color-neutral-light-grey);
-    font-weight: var(--font-weight-400);
     width: calc(100% - 48px);
+    color: var(--color-neutral-light-grey);
+    border: 2px solid var(--color-neutral-light-grey);
+    font-weight: var(--font-weight-400);
   }
 
   .view-plans-button:hover {
-    background-color: var(--color-neutral-light-grey);
     color: var(--color-neutral-very-dark-violet);
+    background-color: var(--color-neutral-light-grey);
   }
 
   .burger {
