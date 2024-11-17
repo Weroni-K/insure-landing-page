@@ -1,6 +1,6 @@
 <template>
   <div id="find-out-section">
-    <h1>Find out more<br />about how we work</h1>
+    <h2>Find out more<br />about how we work</h2>
     <button class="find-out-button">How we work</button>
   </div>
 </template>
@@ -36,7 +36,7 @@
   background-color: var(--color-neutral-light-grey);
 }
 
-h1 {
+h2 {
   color: var(--color-neutral-light-grey);
   font-size: 56px;
 }
@@ -46,7 +46,7 @@ h1 {
     margin: 8rem 24px;
     padding: 3rem 4rem;
   }
-  h1 {
+  h2 {
     font-size: 48px;
   }
 }
@@ -61,7 +61,7 @@ h1 {
     background: var(--color-primary-dark-violet)
       url(../assets/images/bg-pattern-how-we-work-mobile.svg) no-repeat right top / 54%;
   }
-  h1 {
+  h2 {
     font-size: 40px;
   }
   .find-out-button {

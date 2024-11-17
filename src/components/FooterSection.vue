@@ -19,7 +19,7 @@
       </div>
       <div class="links-container">
         <div v-for="(column, titleIndex) in footerColumns" :key="titleIndex" class="links-column">
-          <h3>{{ column.title }}</h3>
+          <h4>{{ column.title }}</h4>
           <ul>
             <li v-for="(link, linkIndex) in column.links" :key="linkIndex">
               <a :href="link.url"
@@ -119,16 +119,11 @@ const linksSocial = ref([
   padding: 3rem 0 1.5rem 0;
 }
 
-h3 {
-  font-size: 14px;
-  padding-bottom: 1.5rem;
-}
 p {
   color: var(--color-primary-dark-violet);
   font-weight: var(--font-weight-700);
   font-size: 14px;
   padding-bottom: 0.5rem;
-  line-height: 1.6;
 }
 
 p:hover {
@@ -164,7 +159,7 @@ p:hover {
   .links-column {
     margin-bottom: 2rem;
   }
-  h3 {
+  h4 {
     padding-bottom: 1rem;
   }
 }

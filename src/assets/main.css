@@ -13,10 +13,12 @@
 }
 
 body {
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.6;
   font-weight: normal;
   font-family: var(--font-body);
-  font-size: 16px;
+
+  overflow-wrap: break-word;
 }
 
 img,
@@ -30,13 +32,6 @@ button {
   letter-spacing: inherit;
   word-spacing: inherit;
   color: currentColor;
-}
-
-p,
-h1,
-h2,
-h3 {
-  overflow-wrap: break-word;
 }
 
 ul,
@@ -59,26 +54,32 @@ a {
   --font-weight-700: 700;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   font-family: var(--font-headings);
   font-weight: var(--font-weight-400);
+  color: var(--color-primary-dark-violet);
+}
+h1 {
   font-size: 72px;
+  line-height: 0.9;
+  color: var(--color-neutral-light-grey);
 }
 
 h2 {
-  font-family: var(--font-headings);
-  font-weight: var(--font-weight-400);
-  font-size: 28px;
+  font-size: 72px;
+  line-height: 1;
 }
 
-/* #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-} */
+h3 {
+  font-size: 28px;
+  margin: 2rem 0 1.5rem 0;
+  line-height: 1;
+}
 
-/* designs:
-- Mobile: 375px
-- Desktop: 1440px
-320px to large screens. 
-*/
+h4 {
+  font-size: 14px;
+  line-height: 1;
+  padding-bottom: 1.5rem;
+}

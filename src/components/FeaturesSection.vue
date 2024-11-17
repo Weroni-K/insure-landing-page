@@ -1,12 +1,12 @@
 <template>
   <div id="features-section">
     <div class="features-title">
-      <h1>We're different</h1>
+      <h2>We're different</h2>
     </div>
     <div class="features-cards">
       <div v-for="(card, index) in featuresCard" :key="index" class="features-card">
         <img :src="card.img" alt="Features image" class="features-img" />
-        <h2>{{ card.title }}</h2>
+        <h3>{{ card.title }}</h3>
         <p>{{ card.description }}</p>
       </div>
     </div>
@@ -45,7 +45,7 @@ const featuresCard = ref([
 #features-section {
   max-width: 1110px;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 0 0 2rem 0;
 }
 
 .features-title {
@@ -58,26 +58,21 @@ const featuresCard = ref([
   gap: 2rem;
 }
 
-h2 {
-  margin: 2rem 0 1.5rem 0;
-}
-
 p {
   color: var(--color-neutral-dark-greyish-violet);
-  line-height: 1.6;
 }
 
 @media (max-width: 1180px) {
   #features-section {
     margin: 0 24px;
   }
-  h1 {
+  h2 {
     font-size: 46px;
   }
 }
 
 @media (max-width: 768px) {
-  h1 {
+  h2 {
     text-align: center;
   }
   .features-cards {
@@ -89,6 +84,9 @@ p {
   .features-card {
     justify-items: center;
     text-align: center;
+  }
+  .features-title {
+    padding-top: 3rem;
   }
 }
 </style>

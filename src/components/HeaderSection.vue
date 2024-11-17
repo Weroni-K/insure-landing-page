@@ -68,7 +68,7 @@ onUnmounted(() => {
 #header-section {
   max-width: 1110px;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .navbar {
