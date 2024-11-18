@@ -79,7 +79,7 @@ const isDesktop = computed(() => {
   content: '';
   position: absolute;
   height: 1px;
-  width: 9.5rem;
+  width: 9.5%;
 }
 
 .content-container::before {
@@ -99,10 +99,12 @@ const isDesktop = computed(() => {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+  z-index: 2;
 }
 
 h1 {
   color: var(--color-neutral-light-grey);
+  overflow-wrap: break-word;
 }
 
 p {
@@ -164,7 +166,8 @@ p {
     display: none;
   }
   .content-container::after {
-    left: calc(50% - 4.75rem);
+    left: calc(50% - 1rem);
+    width: 2rem;
   }
   .text {
     padding-top: 0;
@@ -178,6 +181,38 @@ p {
   }
   h1 {
     line-height: 1.1;
+  }
+}
+
+@media (max-width: 375px) {
+  .intro-illustration {
+    position: relative;
+    margin-bottom: 0;
+  }
+
+  .content-container {
+    gap: 0;
+  }
+
+  .text {
+    position: relative;
+    padding-top: 6rem;
+  }
+
+  h1 {
+    z-index: 2;
+  }
+
+  .text::after {
+    content: '';
+    position: absolute;
+    height: 10rem;
+    max-width: 100%;
+    aspect-ratio: 1;
+    background: url('../assets/images/bg-pattern-intro-left-mobile.svg') no-repeat left top;
+    z-index: 1;
+    top: 0;
+    left: -24px;
   }
 }
 </style>

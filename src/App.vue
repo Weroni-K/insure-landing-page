@@ -65,6 +65,7 @@ import FooterSection from './components/FooterSection.vue'
 @media (max-width: 375px) {
   .backgroundsvgs::after {
     display: none;
+    overflow: hidden;
   }
 }
 </style>
