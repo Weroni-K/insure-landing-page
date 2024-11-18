@@ -26,7 +26,7 @@ The layout design and assets (images, icons) were provided by **Frontend Mentor*
 
 ## Live Preview 🌐
 
-Check out the live project: [**Insure Landing Page**](weroni-k.github.io/insure/)
+Check out the live project: [**Insure Landing Page**](https://weroni-k.github.io/insure-landing-page/)
 
 ---
 
