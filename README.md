@@ -10,8 +10,8 @@ Desired layout idea, as well as other assets, were provided by the Frontend Ment
 
 ### Features 🌟
 
-- Fully responsive design for desktop and mobile.
-- Deployed and hosted on GitHub Pages.
+- Fully responsive design for desktop and mobile,
+- Deployed and hosted on GitHub Pages,
 - Built with Vue.js for a modular and maintainable codebase.
 
 ### Assets and Design 🎨
@@ -20,9 +20,9 @@ The layout design and assets (images, icons) were provided by **Frontend Mentor*
 
 ## Technologies Used 🚀
 
-- **Vue.js**
-- **CSS** for styling
-- GitHub Pages for deployment
+- **Vue.js**,
+- **CSS** for styling,
+- GitHub Pages for deployment.
 
 ## Live Preview 🌐
 
