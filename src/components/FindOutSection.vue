@@ -43,7 +43,7 @@ h2 {
 
 @media (max-width: 1180px) {
   #find-out-section {
-    margin: 8rem 24px;
+    margin: 8rem 0;
     padding: 3rem 4rem;
   }
   h2 {

@@ -84,6 +84,7 @@ onUnmounted(() => {
 }
 
 .nav-links {
+  z-index: 1000;
   margin: 0;
   padding: 0;
   display: flex;
